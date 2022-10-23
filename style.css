@@ -13,11 +13,12 @@ html{
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 20px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
   }
   
   #myBtn:hover {
+    transition: all 0.5s ease;
     background-color: #555; /* Add a dark-grey background on hover */
   }
   .zoom:hover {
@@ -32,4 +33,7 @@ html{
   .name_blue{
     color: rgb(75, 131, 238);
 
+  }
+  #footers{
+    z-index: 999;
   }
