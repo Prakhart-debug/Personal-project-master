@@ -12,17 +12,17 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"> Top </button>
+    <button class="topbutt" onclick="topFunction()" id="myBtn" title="Go to top" > Top </button>
 
-    <hr>
-    <header class="text-gray-400 bg-gray-900 body-font">
+    <header class="sticky top-0 z-50 text-gray-400 bg-gray-600 body-font shadow-lg">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
                     stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full"
                     viewBox="0 0 24 24">
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
+                </svg> -->
+                <img class="head_pic" src="/FB_IMG_1597322180911.jpg" alt="" height="25px" width="25px">
                 <span class="ml-3 text-xl">Prakhar T</span>
             </a>
             <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
@@ -41,7 +41,7 @@
         </div>
     </header>
     <!-- ---------------------------------------------------------------------------------------- -->
-    <hr>
+   
     <section class="text-gray-400 bg-gray-900 body-font" id="About_section">
 
 
@@ -66,13 +66,13 @@
                 <div class="zoom">
                 <p class="mb-8 leading-relaxed pt-10 pb-5 hover:text-white ease-in-out delay-250 " >Competetive Programmer <br> Front End Developer <br> Love to play CTF's <br> Pursuing Computers Science at <br> Manipal Institute of Technology</p>
                 </div>
-                <div class="flex justify-center">
+                <div class="flex justify-center" id="resbutt">
                     <form method="get" action="121.pdf">
                          <button
                         class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"><a href="/Resume.pdf" download="">Download Resumme <img src="" alt=""> </a></button>
                     </form>
                         <button
-                        class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"> <a href="/Resume.pdf">View Resume</a> </button>
+                        class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"> <a href="/Resume.pdf" target="_blank">View Resume</a> </button>
                 </div>
             </div>
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -88,8 +88,8 @@
             <div class="-my-8 divide-y-2 divide-gray-800">
                 <div class="py-8 flex flex-wrap md:flex-nowrap">
                     <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                        <span class="text-2xl font-medium text-white title-font mb-2">CATEGORY</span>
-                        <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                        <span class="text-2xl font-medium text-white title-font mb-2">Programming Languages</span>
+                      
                     </div>
                     <div class="md:flex-grow">
                         <h2 class="font-semibold title-font text-white">C, C++, C#, Python, Java, JavaScript, HTML</h2>
@@ -105,7 +105,7 @@
                 <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
                     <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                         <span class="text-2xl font-medium text-white title-font mb-2">Libraries/Frameworks</span>
-                        <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                      
                     </div>
                     <div class="md:flex-grow">
                         <h2 class="font-semibold title-font text-white">CSS, Tailwind, Streamlit</h2>
@@ -121,7 +121,7 @@
                 <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
                     <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                         <span class="text-2xl font-medium text-white title-font mb-2">Tools / Platforms</span>
-                        <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                      
                     </div>
                     <div class="md:flex-grow">
                         <h2 class="font-semibold title-font text-white">Netbeans, Eclipse, Visual Studio, Xcode, Canva,
@@ -138,7 +138,7 @@
                 <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
                     <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                         <span class="text-2xl font-medium text-white title-font mb-2">Databases</span>
-                        <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                      
                     </div>
                     <div class="md:flex-grow">
                         <h2 class="font-semibold title-font text-white">CSS, Tailwind, Streamlit</h2>
@@ -174,7 +174,8 @@
                 </div>
                 <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                   <h2 class="font-medium title-font text-white mb-1 text-xl">Apple Developers' Group</h2>
-                  <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+                  <h3><b><i>General Secretary</i></b></h3>
+                  
                 </div>
               </div>
             </div>
@@ -191,7 +192,8 @@
                 </div>
                 <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                   <h2 class="font-medium title-font text-white mb-1 text-xl">Project Vision</h2>
-                  <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+                  <h3><b><i>Head of Headset Development</i></b></h3>
+                  
                 </div>
               </div>
             </div>
@@ -209,7 +211,8 @@
                 </div>
                 <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                   <h2 class="font-medium title-font text-white mb-1 text-xl">Manipal Information Security Team</h2>
-                  <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+                  <h3><b><i>Managment Committee member in Technical and WebDev Division</i></b></h3>
+                  
                 </div>
               </div>
             </div>
@@ -227,7 +230,7 @@
                 </div>
                 <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                   <h2 class="font-medium title-font text-white mb-1 text-xl">Code(Red)</h2>
-                  <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+                  <h3><b><i>Core Committee Member in Technical Fest 2022</i></b></h3>
                 </div>
               </div>
             </div>
@@ -274,8 +277,8 @@
                 </div>
                 <div class="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
                     <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">Library Managment System</h2>
-                    <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat.
-                        Distillery hexagon disrupt edison bulbche.</p>
+                    <p class="leading-relaxed text-base mb-4">A simple Database implementation with .NET framework and C#. Basic SQL Qurries to perform CRUD operations</p>
+                    
                     <a class="text-blue-400 inline-flex items-center">Learn More
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -338,7 +341,7 @@
             <a href="https://github.com/Prakhart-debug" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@prakhart-debug</a>
           </p>
           <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a class="text-gray-400" href="https://www.facebook.com/prakhart66/">
+            <a class="text-gray-400" href="https://www.facebook.com/prakhart66/" target="_blank">
               <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
@@ -348,13 +351,13 @@
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg> -->
             </a>
-            <a class="ml-3 text-gray-400" href="https://www.instagram.com/prakhar.t_/">
+            <a class="ml-3 text-gray-400" href="https://www.instagram.com/prakhar.t_/" target="_blank">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
             </a>
-            <a class="ml-3 text-gray-400" href="https://www.linkedin.com/in/prakhar-tripathi-9729a7141/">
+            <a class="ml-3 text-gray-400" href="https://www.linkedin.com/in/prakhar-tripathi-9729a7141/" target="_blank">
               <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
                 <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
                 <circle cx="4" cy="4" r="2" stroke="none"></circle>
